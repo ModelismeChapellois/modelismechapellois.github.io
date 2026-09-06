@@ -882,3 +882,91 @@ footer {
 }
 
 
+/* ============================
+   PAGE ADMIN – CONTENEUR
+   ============================ */
+
+main.page-admin {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Titres de la page admin */
+
+main.page-admin h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+main.page-admin h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+}
+
+/* ============================
+   BLOCS / SECTIONS
+   ============================ */
+
+main.page-admin .section {
+    background: #ffffff;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Iframes dans les sections */
+
+main.page-admin .section iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Graphiques (canvas) */
+
+main.page-admin .section canvas {
+    width: 100% !important;
+    max-height: 350px;
+    margin-top: 20px;
+}
+
+/* Historique des pages consultées */
+
+main.page-admin .section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+main.page-admin .section ul li {
+    background: #f7f7f7;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    border-left: 4px solid #2a6bf4;
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+
+@media (max-width: 768px) {
+    main.page-admin {
+        padding: 10px;
+    }
+
+    main.page-admin .section {
+        padding: 15px;
+    }
+
+    main.page-admin .section iframe {
+        height: 450px;
+    }
+}
