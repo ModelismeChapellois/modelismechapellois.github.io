@@ -967,6 +967,6 @@ main.page-admin .section ul li {
     }
 
     main.page-admin .section iframe {
-        height: 450px;
+        height: auto;
     }
 }
