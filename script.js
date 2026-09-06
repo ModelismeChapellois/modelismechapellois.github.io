@@ -64,5 +64,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// ===============================
+// Pixel FeedPulse (tracking global)
+// ===============================
+
+(function(){
+    function g(){
+        try{
+            var i = new Image();
+            var t = (document.title || '').slice(0,160);
+            i.src = 'https://feed-pulse.com/api/track-pixel/b4581b97-b5a5-456d-a47b-7dd6cf6d2e47?path=' +
+                encodeURIComponent(location.pathname || '/') +
+                '&title=' + encodeURIComponent(t) +
+                '&host=' + encodeURIComponent(location.host) +
+                '&ref=' + encodeURIComponent(document.referrer || '');
+        } catch(e){}
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', g, { once: true });
+    } else {
+        setTimeout(g, 80);
+    }
+})();
 
 
