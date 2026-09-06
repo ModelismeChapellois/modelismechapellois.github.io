@@ -855,3 +855,30 @@ footer {
     margin: 20px 0;
 }
 
+/* FOOTER (pied de page) */
+/* --- FOOTER --- */
+.footer {
+    background: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2a6bf4;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #1f54c9;
+}
+
+
