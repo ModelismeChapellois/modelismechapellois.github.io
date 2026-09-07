@@ -892,6 +892,10 @@ footer {
    PAGE ADMIN – CONTENEUR
    ============================ */
 
+   main.page-admin .section {
+    max-width: none !important;
+}
+
 main.page-admin {
     max-width: 1100px;
     margin: 0 auto;
@@ -932,6 +936,10 @@ main.page-admin .section iframe {
     height: 600px;
     border: none;
     border-radius: 8px;
+}
+
+.dashboard-section iframe {
+    max-width: none 
 }
 
 /* Graphiques (canvas) */
