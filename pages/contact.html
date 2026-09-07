@@ -14,42 +14,36 @@
     <div id="navbar"></div>
 </header>
 
-<section class="contact-section">
-    <h2>Contactez-nous</h2>
-    <p>Pour toute question, information ou demande d’adhésion, vous pouvez nous joindre via :</p>
+<section class="contact-form-section">
+    <h2>Demande de renseignements</h2>
+    <p>Envoyez-nous votre message, nous vous répondrons rapidement.</p>
 
-    <div class="contact-cards">
+    <form id="contact-form">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
 
-        <div class="contact-card">
-            <h3>📺 YouTube</h3>
-            <p><a href="https://www.youtube.com/@Mod%C3%A9lismeChapellois" target="_blank">Notre chaîne YouTube</a></p>
-        </div>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
 
-        <div class="contact-card">
-            <h3>📘 Facebook</h3>
-            <p><a href="https://www.facebook.com/groups/modelismechapellois" target="_blank">Notre page Facebook</a></p>
-        </div>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-        <div class="contact-card">
-            <h3>📸 Instagram</h3>
-            <p><a href="https://www.instagram.com/modelismechapellois/" target="_blank">Notre compte Instagram</a></p>
-        </div>
+        <button type="submit">Envoyer</button>
+    </form>
 
-        <div class="contact-card">
-            <h3>🎵 TikTok</h3>
-            <p><a href="https://www.tiktok.com/@modelismechapellois" target="_blank">Notre compte TikTok</a></p>
-        </div>
-
-    </div>
+    <p id="form-status"></p>
 </section>
 
 
-<div class="contact-card">
-    <h3>📧 Email</h3>
-    <p><a href="mailto:modelismechapellois@gmail.com">modelismechapellois@gmail.com</a></p>
-</div>
+<footer class="footer">
+    <div class="footer-links">
+        <a href="mailto:modelismechapellois@gmail.com">📧 Email</a>
+        <a href="https://www.youtube.com/@Mod%C3%A9lismeChapellois" target="_blank">📺 YouTube</a>
+        <a href="https://www.facebook.com/groups/modelismechapellois" target="_blank">📘 Facebook</a>
+        <a href="https://www.instagram.com/modelismechapellois" target="_blank">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@modelismechapellois" target="_blank">🎵 TikTok</a>
+    </div>
 
-<footer>
     <p>© 2026 Modélisme Chapellois</p>
 </footer>
 </body>
