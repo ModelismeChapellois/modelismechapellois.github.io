@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Club de modélisme à La Chapelle-Saint-Ursin : piste_buggy, piste extérieure, indoor, événements, agenda, galerie photos.">
+    <title>Le club - Modélisme Chapellois</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <div id="navbar"></div>
+</header>
+
+<div class="page-piste_buggy">
+
+    <section id="intro">
+        <h2>La piste de crawler</h2>
+        <p>
+            Le circuit drone racer couvre une surface de 1 000 m² (50 m × 20 m) et alterne des passages rapides à travers des anneaux avec des trajectoires plus techniques entre les arbres, offrant un tracé dynamique et immersif pour le vol FPV.
+        </p>
+   
+        <img src="../images/pistes/plan_drone2.png" alt="Piste Plan">
+    </section>
+     
+    <a href="../pages/drone.html" class="btn">Découvrir le drone</a>
+
+<footer class="footer">
+    <div class="footer-links">
+        <a href="mailto:modelismechapellois@gmail.com">📧 Email</a>
+        <a href="https://www.youtube.com/@Mod%C3%A9lismeChapellois" target="_blank">📺 YouTube</a>
+        <a href="https://www.facebook.com/groups/modelismechapellois" target="_blank">📘 Facebook</a>
+        <a href="https://www.instagram.com/modelismechapellois" target="_blank">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@modelismechapellois" target="_blank">🎵 TikTok</a>
+    </div>
+
+    <p>© 2026 Modélisme Chapellois</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+<script>
+    fetch("../header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
+</html>
