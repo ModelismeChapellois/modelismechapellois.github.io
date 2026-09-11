@@ -57,13 +57,16 @@ body {
 }
 
 .btn {
-    display: inline-block;
+    display: block;
     padding: 12px 25px;
     background: #2a6bf4;
     color: white;
     border-radius: 6px;
     text-decoration: none;
     margin-top: 20px;
+    width: fit-content;
+    margin: 20px auto;
+    
 }
 
 /* INDEX */
@@ -595,10 +598,17 @@ footer {
 }
 
 .btn-center {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background: #2a6bf4;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
 }
+
+
 .next-event {
     max-width: 600px;
     margin: 40px auto;
@@ -667,15 +677,15 @@ footer {
     margin-bottom: 8px;
 }
 
-/* Mise en avant */
-.page-buggy .highlight {
-    font-weight: 600;
-    color: #c0392b;
+.page-buggy section a {
+    color: #070100;
+    text-decoration: none;
 }
+
 
 /* Liens */
 .page-buggy a {
-    color: #c0392b;
+    
     text-decoration: none;
 }
 
@@ -869,6 +879,7 @@ footer {
     text-align: center;
     margin-top: 60px;
     border-top: 1px solid #ddd;
+    
 }
 
 .footer-links {
@@ -1035,3 +1046,89 @@ main.page-admin .section ul li {
 }
 
 
+/*page piste buggy */
+
+.page-piste_buggy {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    color: #000
+}
+
+/* Titres */
+.page-piste_buggy h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000
+
+}
+
+.page-piste_buggy h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000
+}
+
+.page-piste_buggy h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Sections */
+.page-piste_buggy section {
+    background: #fff;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    color: #000
+}
+
+/* Texte */
+.page-piste_buggy p {
+    text-align: justify;
+    line-height: 1.7;
+    color: #000
+}
+
+/* Listes */
+.page-piste_buggy ul {
+    margin-left: 25px;
+    text-align: justify;
+}
+
+.page-piste_buggy li {
+    margin-bottom: 8px;
+}
+
+/* Mise en avant */
+.page-piste_buggy .highlight {
+    font-weight: 600;
+    color: #000
+}
+
+/* Liens */
+.page-piste_buggy a {
+    color: #000
+    text-decoration: none;
+}
+
+.page-piste_buggy a:hover {
+    text-decoration: underline;
+}
+.page-piste_buggy section {
+    color: #000
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: justify;
+    
+}
