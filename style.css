@@ -1160,3 +1160,18 @@ main.page-admin .section ul li {
     }
 }
 
+.club-image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* limite sur grand écran */
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+    border-radius: 8px; /* optionnel */
+}
+@media (max-width: 768px) {
+    .club-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
