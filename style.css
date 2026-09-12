@@ -557,10 +557,35 @@ footer {
 }
 
 
+/* Harmonisation des logos partenaires */
 .partner-logo {
-    height: auto; /* tu peux mettre 140px, 160px, etc. */
-    width: auto;
+    width: 200px;        /* taille uniforme */
+    height: auto;        /* garde les proportions */
+    object-fit: contain; /* évite les déformations */
+    display: block;
 }
+
+/* Alignement propre du bloc partenaire */
+.partner-item a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .partner-item a {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .partner-logo {
+        width: 150px;    /* un peu plus grand pour mobile */
+    }
+}
+
 #visitor-counter {
     text-align: center;
     margin-top: 40px;
